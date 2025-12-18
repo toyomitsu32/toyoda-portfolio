@@ -7,50 +7,50 @@ export default function Projects() {
   const projects = [
     {
       id: "forestry-dx",
-      title: "Forestry DX Platform Strategy & Build",
-      client: "Construction Machinery Manufacturer",
-      period: "Oct 2023 - Jun 2024",
-      role: "Project Leader (3-7 members)",
+      title: "林業DXプラットフォームの戦略策定・構築",
+      client: "大手建設機械メーカー",
+      period: "2023年10月 - 2024年6月",
+      role: "プロジェクトリーダー（3〜7名体制）",
       image: "/images/manufacturing-dx.jpg",
       tags: ["Azure", "Mapbox", "GeoServer", "React", "Rails"],
-      challenge: "Urgent need to improve forestry productivity, but unclear concrete measures for data utilization. Low digital literacy of field workers was also a barrier.",
-      approach: "Set 'Work Plan Optimization' using remote sensing data and GIS analysis as a priority theme. Developed an offline-capable map app and conducted a 3-month PoC.",
+      challenge: "林業事業の生産性向上が急務であるものの、データ活用の具体策が不明瞭。現場作業員のデジタルリテラシーの低さも障壁となっていました。",
+      approach: "リモートセンシングデータとGIS解析による「作業計画最適化」を優先テーマに設定し、3年ロードマップを策定。オフラインでも使えるマップアプリを開発し、3ヶ月のPoCを実施しました。",
       results: [
-        "Reduced work planning time by approx. 30% (PoC result)",
-        "Achieved 90%+ utilization rate with high praise from field workers",
-        "Secured approval for full-scale investment"
+        "作業計画立案時間を約30%短縮（PoC検証結果）",
+        "現場作業員から「使いやすい」と高評価を得て利用率90%超を達成",
+        "PoC成功により本格投資の承認を獲得し、全国展開へ"
       ]
     },
     {
       id: "dialysis-system",
-      title: "Dialysis Information System Business Transformation",
-      client: "Medical Device Manufacturer",
-      period: "Nov 2023 - Present",
-      role: "Project Leader (5-7 members)",
+      title: "透析情報管理システムの事業変革支援",
+      client: "大手医療機器メーカー",
+      period: "2023年11月 - 現在",
+      role: "プロジェクトリーダー（5〜7名体制）",
       image: "/images/global-collaboration.jpg",
       tags: ["Azure", "React.js", "Ruby on Rails", "PostgreSQL"],
-      challenge: "Urgent need to shift business to global expansion and data business due to domestic market saturation. Existing system issues were unorganized.",
-      approach: "Visualized issues through workshops and formulated a long-term vision. Stationed in Belgium for 2 months to establish a development structure.",
+      challenge: "国内市場の頭打ちから、グローバル展開とデータビジネスへの事業転換が急務。しかし、既存システムの課題が未整理で、海外拠点との協業体制も未整備な状態でした。",
+      approach: "ワークショップを通じて既存システムの課題を可視化し、透析データを活用した長期ビジョンを策定。ベルギー拠点に2ヶ月駐在して開発体制を立ち上げ、多様なステークホルダーとの調整を主導しました。",
       results: [
-        "Secured management approval for long-term roadmap",
-        "Established global collaboration structure with Belgium base",
-        "Connected to PoC for sales support data analysis platform"
+        "透析データビジネスの長期ロードマップについて経営層の承認を獲得",
+        "ベルギー拠点との協業体制を確立し、グローバル展開の基盤を構築",
+        "営業支援データ分析基盤のPoC（現在進行中）へと接続"
       ]
     },
     {
       id: "semiconductor-yield",
-      title: "Semiconductor Exposure Equipment Yield Improvement",
-      client: "Canon Inc.",
-      period: "Jan 2018 - Oct 2022",
-      role: "Project Leader (7 members)",
+      title: "半導体露光装置の稼働率改善プロジェクト",
+      client: "キヤノン株式会社",
+      period: "2018年1月 - 2022年10月",
+      role: "プロジェクトリーダー（7名体制）",
       image: "/images/data-analysis.jpg",
       tags: ["Linux", "Python", "Machine Learning", "Agile"],
-      challenge: "Long equipment downtime and reliance on manual inspection image classification caused productivity and accuracy issues.",
-      approach: "Identified root causes through data analysis. Developed an automated inspection image classification system using machine learning.",
+      challenge: "装置のダウンタイムが長く、検査画像の判別作業を人手に依存していたため、生産性と判定精度に課題がありました。",
+      approach: "稼働データを分析してダウンタイムの主要因を特定。機械学習による検査画像の自動判別システムを開発し、顧客との共同体制でアジャイル開発を推進しました。",
       results: [
-        "Improved equipment availability by 15%",
-        "Reduced error rate by 50%",
-        "Awarded Best Project (1st out of 100 internal projects)"
+        "装置稼働率を15%向上",
+        "誤判定率を50%削減し、検査精度を安定化",
+        "顧客内100プロジェクト中で最優秀賞を受賞"
       ]
     }
   ];
@@ -68,8 +68,8 @@ export default function Projects() {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Selected Projects</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              A showcase of strategic execution and technical implementation.
-              Real-world examples of how I drive manufacturing DX.
+              戦略的実行と技術実装のショーケース。
+              製造業DXを推進した具体的なプロジェクト実績をご紹介します。
             </p>
           </motion.div>
         </div>
@@ -122,7 +122,7 @@ export default function Projects() {
                 <div className="space-y-8">
                   <div className="bg-secondary/30 p-6 border-l-2 border-chart-1">
                     <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-                      <Target className="h-5 w-5 text-chart-1" /> Challenge
+                      <Target className="h-5 w-5 text-chart-1" /> 課題
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
                       {project.challenge}
@@ -130,7 +130,7 @@ export default function Projects() {
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-bold mb-3">Approach</h3>
+                    <h3 className="text-lg font-bold mb-3">アプローチ</h3>
                     <p className="text-muted-foreground leading-relaxed">
                       {project.approach}
                     </p>
@@ -138,7 +138,7 @@ export default function Projects() {
 
                   <div>
                     <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
-                      <Zap className="h-5 w-5 text-chart-1" /> Key Results
+                      <Zap className="h-5 w-5 text-chart-1" /> 主な成果
                     </h3>
                     <ul className="space-y-3">
                       {project.results.map((result, i) => (
@@ -159,13 +159,13 @@ export default function Projects() {
       {/* CTA */}
       <section className="py-20 bg-secondary border-t border-border">
         <div className="container text-center max-w-2xl">
-          <h2 className="text-3xl font-bold mb-6">Have a project in mind?</h2>
+          <h2 className="text-3xl font-bold mb-6">プロジェクトのご相談はこちら</h2>
           <p className="text-muted-foreground mb-8">
-            I'm always open to discussing new opportunities in manufacturing DX.
-            Let's see how we can work together.
+            製造業DXに関する新しい機会について、いつでもご相談を受け付けております。
+            貴社の課題解決にどのように貢献できるか、ぜひお話しさせてください。
           </p>
           <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none" asChild>
-            <Link href="/contact">Get in Touch</Link>
+            <Link href="/contact">お問い合わせ</Link>
           </Button>
         </div>
       </section>

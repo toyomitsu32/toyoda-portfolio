@@ -14,10 +14,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   }, [location]);
 
   const navItems = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
+    { name: "ホーム", path: "/" },
+    { name: "経歴・スキル", path: "/about" },
+    { name: "プロジェクト実績", path: "/projects" },
+    { name: "お問い合わせ", path: "/contact" },
   ];
 
   return (
@@ -52,7 +52,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             ))}
             <Button variant="default" size="sm" className="ml-4 rounded-none font-mono text-xs" asChild>
-              <Link href="/contact">Get in Touch</Link>
+              <Link href="/contact">お問い合わせ</Link>
             </Button>
           </nav>
 
@@ -84,7 +84,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             ))}
             <Button className="mt-4 w-full rounded-none" asChild>
-              <Link href="/contact">Get in Touch</Link>
+              <Link href="/contact">お問い合わせ</Link>
             </Button>
           </nav>
         </div>
@@ -103,21 +103,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <div className="w-6 h-6 bg-primary text-primary-foreground flex items-center justify-center font-mono text-xs">
                 TM
               </div>
-              <span className="font-bold text-lg">Mitsuharu Toyoda</span>
+              <span className="font-bold text-lg">豊田 光晴</span>
             </div>
             <p className="text-muted-foreground max-w-md text-sm leading-relaxed">
-              Manufacturing DX Consultant bridging the gap between engineering reality and strategic vision.
-              Specializing in productivity improvement through data and AI.
+              現場のリアリティと戦略的視点を融合させる製造業DXコンサルタント。
+              データとAIを活用し、生産性向上と組織変革を実現します。
             </p>
           </div>
           
           <div>
             <h3 className="font-bold mb-4 text-sm uppercase tracking-wider text-primary">Navigation</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link href="/"><a className="hover:text-primary transition-colors">Home</a></Link></li>
-              <li><Link href="/about"><a className="hover:text-primary transition-colors">About</a></Link></li>
-              <li><Link href="/projects"><a className="hover:text-primary transition-colors">Projects</a></Link></li>
-              <li><Link href="/contact"><a className="hover:text-primary transition-colors">Contact</a></Link></li>
+              <li><Link href="/"><a className="hover:text-primary transition-colors">ホーム</a></Link></li>
+              <li><Link href="/about"><a className="hover:text-primary transition-colors">経歴・スキル</a></Link></li>
+              <li><Link href="/projects"><a className="hover:text-primary transition-colors">プロジェクト実績</a></Link></li>
+              <li><Link href="/contact"><a className="hover:text-primary transition-colors">お問い合わせ</a></Link></li>
             </ul>
           </div>
 

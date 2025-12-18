@@ -16,7 +16,7 @@ export default function Contact() {
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
-      toast.success("Message sent successfully! I'll get back to you soon.");
+      toast.success("メッセージが送信されました。確認次第ご連絡いたします。");
       // Reset form logic would go here
     }, 1500);
   };
@@ -33,8 +33,7 @@ export default function Contact() {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Interested in collaboration or have a question?
-              Feel free to reach out.
+              協業のご相談やご質問など、お気軽にお問い合わせください。
             </p>
           </motion.div>
         </div>
@@ -52,9 +51,8 @@ export default function Contact() {
             <div>
               <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                I am currently available for consulting projects and advisory roles.
-                Whether you have a specific project in mind or just want to discuss 
-                manufacturing DX possibilities, I'd love to hear from you.
+                現在、コンサルティングプロジェクトやアドバイザリー業務のご依頼を受け付けております。
+                具体的なプロジェクトのご相談はもちろん、製造業DXの可能性についてのディスカッションなども歓迎です。
               </p>
               
               <div className="space-y-6">
@@ -77,7 +75,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold mb-1">Location</h3>
                     <p className="text-muted-foreground">
-                      Tokyo, Japan (Available for remote & travel)
+                      東京（リモート・出張対応可）
                     </p>
                   </div>
                 </div>
@@ -112,29 +110,29 @@ export default function Contact() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="bg-card border border-border p-8 md:p-10 shadow-sm"
           >
-            <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
+            <h2 className="text-2xl font-bold mb-6">メッセージを送る</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium">Name</label>
-                  <Input id="name" placeholder="Your Name" required className="rounded-none bg-secondary/50 border-border focus:border-chart-1" />
+                  <label htmlFor="name" className="text-sm font-medium">お名前</label>
+                  <Input id="name" placeholder="山田 太郎" required className="rounded-none bg-secondary/50 border-border focus:border-chart-1" />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">Email</label>
+                  <label htmlFor="email" className="text-sm font-medium">メールアドレス</label>
                   <Input id="email" type="email" placeholder="your@email.com" required className="rounded-none bg-secondary/50 border-border focus:border-chart-1" />
                 </div>
               </div>
               
               <div className="space-y-2">
-                <label htmlFor="subject" className="text-sm font-medium">Subject</label>
-                <Input id="subject" placeholder="Project Inquiry" required className="rounded-none bg-secondary/50 border-border focus:border-chart-1" />
+                <label htmlFor="subject" className="text-sm font-medium">件名</label>
+                <Input id="subject" placeholder="プロジェクトのご相談" required className="rounded-none bg-secondary/50 border-border focus:border-chart-1" />
               </div>
               
               <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium">Message</label>
+                <label htmlFor="message" className="text-sm font-medium">メッセージ本文</label>
                 <Textarea 
                   id="message" 
-                  placeholder="Tell me about your project or inquiry..." 
+                  placeholder="お問い合わせ内容をご記入ください..." 
                   required 
                   className="min-h-[150px] rounded-none bg-secondary/50 border-border focus:border-chart-1 resize-none" 
                 />
@@ -146,9 +144,9 @@ export default function Contact() {
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
-                  <span className="flex items-center gap-2">Sending...</span>
+                  <span className="flex items-center gap-2">送信中...</span>
                 ) : (
-                  <span className="flex items-center gap-2">Send Message <Send className="h-4 w-4" /></span>
+                  <span className="flex items-center gap-2">送信する <Send className="h-4 w-4" /></span>
                 )}
               </Button>
             </form>
