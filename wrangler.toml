@@ -1,0 +1,37 @@
+name = "toyoda-portfolio"
+type = "javascript"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[env.production]
+name = "toyoda-portfolio-prod"
+route = ""
+zone_id = ""
+
+[build]
+command = "pnpm build"
+cwd = "./"
+watch_paths = ["client/src/**/*.tsx", "client/src/**/*.ts", "client/src/**/*.css"]
+
+[build.upload]
+format = "service-worker"
+
+[env.production.build]
+command = "GITHUB_PAGES=false pnpm build"
+
+[[build.upload.rules]]
+type = "CompiledContentType"
+globs = ["**/*.wasm"]
+fallthrough = true
+
+[[build.upload.rules]]
+type = "Text"
+globs = ["**/*.html", "**/*.css", "**/*.js", "**/*.json"]
+fallthrough = true
+
+[[build.upload.rules]]
+type = "CompiledContentType"
+globs = ["**/*.{png,jpg,jpeg,gif,svg,webp,ico}"]
+fallthrough = true
