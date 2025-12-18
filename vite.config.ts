@@ -8,10 +8,8 @@ import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
 
-const isGitHubPages = process.env.GITHUB_PAGES === 'true';
-
 export default defineConfig({
-  base: isGitHubPages ? '/toyoda-portfolio/' : '/',
+  base: '/',
   plugins,
   resolve: {
     alias: {
